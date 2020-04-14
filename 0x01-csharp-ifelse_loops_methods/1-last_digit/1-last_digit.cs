@@ -9,7 +9,7 @@ namespace _1_last_digit
             Random rndm = new Random();
             int number = rndm.Next(-10000, 10000);
             int lastDigit = number % 10;
-	        if (lastDigit < 6 && lastDigit != 0)
+	    if (lastDigit < 6 && lastDigit != 0)
                 Console.WriteLine("The last digit of {0} is {1} and is less than 6 and not 0", number, lastDigit);
             if (lastDigit == 0)
                 Console.WriteLine("The last digit of {0} is {1} and is 0", number, lastDigit);
