@@ -11,7 +11,7 @@ namespace _5_print_comb
             {
                 if(number == 99)
                 {
-                    Console.Write("{0}", number);
+                    Console.Write("{0}\n", number);
                     break;
                 }
                 Console.Write("{0:D2}, ", number);
