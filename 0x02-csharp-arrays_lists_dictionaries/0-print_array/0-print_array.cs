@@ -1,7 +1,5 @@
 ﻿using System;
 
-//namespace _0_print_array
-//{
     class Array
     {
        public static int[] CreatePrint(int size)
@@ -25,4 +23,3 @@
             return numbers;
        }
     }
-//}
