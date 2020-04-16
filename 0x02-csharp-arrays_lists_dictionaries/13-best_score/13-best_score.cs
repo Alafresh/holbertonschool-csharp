@@ -12,6 +12,6 @@ class Dictionary
             if (myList[key] == max)
                 return key;
         }
-        return myList.Keys.First();
+        return "None";
     }
 }
