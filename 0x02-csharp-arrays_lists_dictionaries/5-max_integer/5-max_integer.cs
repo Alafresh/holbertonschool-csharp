@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace _5_max_integer
-{
     class List
     {
         public static int MaxInteger(List<int> myList)
@@ -17,4 +15,3 @@ namespace _5_max_integer
             return myList[max];
         }
     }
-}
