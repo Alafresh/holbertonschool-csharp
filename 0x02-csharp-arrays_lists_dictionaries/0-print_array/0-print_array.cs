@@ -1,7 +1,7 @@
 ﻿using System;
 
-namespace _0_print_array
-{
+//namespace _0_print_array
+//{
     class Array
     {
        public static int[] CreatePrint(int size)
@@ -25,4 +25,4 @@ namespace _0_print_array
             return numbers;
        }
     }
-}
+//}
