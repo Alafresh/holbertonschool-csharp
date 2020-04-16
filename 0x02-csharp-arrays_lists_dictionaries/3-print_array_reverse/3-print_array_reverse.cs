@@ -1,7 +1,6 @@
 ﻿using System;
 
-namespace _3_print_array_reverse
-{
+
     class Array
     {
        public static void Reverse(int[] array)
@@ -22,4 +21,4 @@ namespace _3_print_array_reverse
             }
        }
     }
-}
+
