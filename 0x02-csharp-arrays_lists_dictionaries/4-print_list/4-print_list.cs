@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace _4_print_list
-{
     class List
     {
         public static List<int> CreatePrint(int size)
@@ -25,4 +23,3 @@ namespace _4_print_list
             return numbers;
         }
     }
-}
