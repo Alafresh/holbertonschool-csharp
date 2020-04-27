@@ -11,6 +11,7 @@ class List
       if (list2.Contains(i))
         newList.Add(i);
     }
+    newList.Sort();
     return newList;
   }
 }
