@@ -7,12 +7,9 @@ class MyStack
   {
     Console.WriteLine("Number of items: {0}", aStack.Count);
     if (aStack.Count == 0)
-    {
       Console.WriteLine("Stack is empty");
-      aStack.Push(newItem);
-      return aStack;
-    }
-    Console.WriteLine("Top item: {0}", aStack.Peek());
+    else
+      Console.WriteLine("Top item: {0}", aStack.Peek());
     if (aStack.Contains(search))
     {
       foreach(string i in aStack.ToArray())
