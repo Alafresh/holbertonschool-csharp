@@ -17,10 +17,10 @@ class MyStack
         if (i == search)
           break;
       }
-      Console.WriteLine("Stack contains {0}: True", search);
+      Console.WriteLine("Stack contains \"{0}\": True", search);
     }
     else
-      Console.WriteLine("Stack contains {0}: False", search);
+      Console.WriteLine("Stack contains \"{0}\": False", search);
     aStack.Push(newItem);
     return aStack;
   }
