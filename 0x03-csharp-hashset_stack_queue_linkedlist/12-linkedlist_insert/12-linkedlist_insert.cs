@@ -9,7 +9,7 @@ class LList
     LinkedListNode<int> newNode = new LinkedListNode<int>(n);
     while (current != null)
     {
-      if (current.Value < n)
+      if (current.Value <= n)
         current = current.Next;
       else
       {
