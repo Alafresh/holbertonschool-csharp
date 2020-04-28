@@ -9,6 +9,7 @@ class LList
     if (myLList.Count == 0)
       return 0;
     node = myLList.First.Value;
+    myLList.RemoveFirst();
     return node;
   }
 }
