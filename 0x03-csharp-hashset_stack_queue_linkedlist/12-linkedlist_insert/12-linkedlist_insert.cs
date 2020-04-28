@@ -6,18 +6,17 @@ class LList
   public static LinkedListNode<int> Insert(LinkedList<int> myLList, int n)
   {
     LinkedListNode<int> current = myLList.First;
-    LinkedListNode<int> newNode = new LinkedListNode<int>(n);
+    LinkedListNode<int> newNode;
     while (current != null)
     {
-      if (current.Value <= n)
-        current = current.Next;
-      else
+      if (current.Value > n)
       {
-        newNode = myLList.Find(current.Value);
-        myLList.AddBefore(newNode, n);
-        break;
+        newNode = myLList.AddBefore(current, n);
+        return newNode;
       }
+      current = current.Next;
     }
+    newNode = myLList.AddLast(n);
     return newNode;
   }
 }
