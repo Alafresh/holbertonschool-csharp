@@ -8,6 +8,7 @@ namespace Enemies
   {
     /// <summary>Represent the Health of enemie</summary>
     public int health;
+    /// <summary>Constructor</summary>
     public Zombie()
     {
       health = 0;
