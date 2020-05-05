@@ -44,5 +44,14 @@ namespace Text.Tests
             // Assert
             Assert.AreEqual(8, result);
         }
+         public void Test4()
+        {
+            // Arrange
+            string s = "a";
+            // Act
+            int result = Text.Str.UniqueChar(s);
+            // Assert
+            Assert.AreEqual(0, result);
+        }
     }
 }
