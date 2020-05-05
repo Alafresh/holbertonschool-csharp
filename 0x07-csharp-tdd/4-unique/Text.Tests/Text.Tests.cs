@@ -64,5 +64,15 @@ namespace Text.Tests
             // Assert other comment
             Assert.AreEqual(0, result);
         }
+        [Test]
+         public void Test7()
+        {
+            // Arrange hi
+            string s = "aabbccddee";
+            // Act
+            int result = Text.Str.UniqueChar(s);
+            // Assert other comment
+            Assert.AreEqual(-1, result);
+        }
     }
 }
