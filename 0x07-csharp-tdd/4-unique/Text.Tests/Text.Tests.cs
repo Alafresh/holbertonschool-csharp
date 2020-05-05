@@ -8,7 +8,7 @@ namespace Text.Tests
         public void Test1()
         {
             // Arrange
-            string s = "aabbcdd";
+            string s = "aabbcddee";
             // Act
             int result = Text.Str.UniqueChar(s);
             // Assert
@@ -24,15 +24,25 @@ namespace Text.Tests
             // Assert
             Assert.AreEqual(-1, result);
         }
-        /*[Test]
+        [Test]
         public void Test3()
         {
             // Arrange
-            string s = "Lalbcd";
+            string s = "abbccdd";
             // Act
             int result = Text.Str.UniqueChar(s);
             // Assert
-            Assert.AreEqual(1, result);
-        }*/
+            Assert.AreEqual(0, result);
+        }
+        [Test]
+        public void Test4()
+        {
+            // Arrange
+            string s = "aabbccdde";
+            // Act
+            int result = Text.Str.UniqueChar(s);
+            // Assert
+            Assert.AreEqual(8, result);
+        }
     }
 }
