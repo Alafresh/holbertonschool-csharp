@@ -13,19 +13,19 @@ namespace Text
                 return -1;
             //s = s.ToLower();
             var set1 = new HashSet<char>();
-	        var set2 = new HashSet<char>();
+            var set2 = new HashSet<char>();
 	        foreach (var c in s)
             {
 		        if (set1.Contains(c))
                     set2.Add(c);
-		        set1.Add(c);
-        	}
-	        for (var i = 0; i < s.Length; i++)
-            {
-		        if (!set2.Contains(s[i]))
-			       return i;
+                set1.Add(c);
             }
-	        return -1;
+            for (var i = 0; i < s.Length; i++)
+            {
+                if (!set2.Contains(s[i]))
+                    return i;
+            }
+            return -1;
         }
     }
 }
