@@ -13,6 +13,7 @@ namespace Text
             int count = 1;
             for (int i = 1; i < s.Length - 1; i++)
             {
+                // ASCII
                 if (s[i] >= 65 && s[i] <= 90)
                     count++;
             }
