@@ -44,6 +44,7 @@ namespace Text.Tests
             // Assert
             Assert.AreEqual(8, result);
         }
+        [Test]
          public void Test5()
         {
             // Arrange hi
