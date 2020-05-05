@@ -14,9 +14,9 @@ namespace Text
             //s = s.ToLower();
             var set1 = new HashSet<char>();
             var set2 = new HashSet<char>();
-	        foreach (var c in s)
+            foreach (var c in s)
             {
-		        if (set1.Contains(c))
+                if (set1.Contains(c))
                     set2.Add(c);
                 set1.Add(c);
             }
