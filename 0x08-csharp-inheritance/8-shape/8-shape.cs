@@ -13,8 +13,8 @@ class Shape
 /// <summary>derived class from shape</summary>
 class Rectangle : Shape
 {
-    private int width;
-    private int height;
+    protected int width;
+    protected int height;
     /// <summary>Set and Get width property</summary>
     public int Width
     {
@@ -54,8 +54,6 @@ class Rectangle : Shape
 class Square : Rectangle
 {
     private int size;
-    private int height;
-    private int width;
     /// <summary>Set and Get size property</summary>
     public int Size
     {
@@ -63,7 +61,7 @@ class Square : Rectangle
         set
         {
              if (value < 0)
-                throw new ArgumentException("size must be greater than or equal to 0");
+                throw new ArgumentException("Size must be greater than or equal to 0");
             else
             {
                 this.size = value;
