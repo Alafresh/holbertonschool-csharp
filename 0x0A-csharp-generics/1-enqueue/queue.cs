@@ -22,9 +22,11 @@ public class Queue<T>
             this.value = V;
         }
     }
-    /// <summary>Properties</summary>
+    /// <summary>First Node</summary>
     public Node head;
+    /// <summary>Last Node</summary>
     public Node tail;
+    /// <summary>Number of Nodes</summary>
     public int count;
     
     /// <summary>Create a new node and add to the end of the queue</summary>
