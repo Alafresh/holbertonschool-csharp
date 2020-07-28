@@ -31,7 +31,7 @@ interface ICollectable
     void Collect();
 }
 /// <summary>New class Test</summary>
-class TestObject : IInteractive , IBreakable, ICollectable
+class TestObject : IInteractive , IBreakable, ICollectable, Base
 {
     public int durability {get; set;}
     public bool isCollected {set; get;}
