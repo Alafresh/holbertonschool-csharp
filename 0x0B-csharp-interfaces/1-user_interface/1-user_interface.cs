@@ -27,14 +27,14 @@ interface IBreakable
 /// <summary>Interface Collectable</summary>
 interface ICollectable
 {
-    bool isCollected {set; get;}
+    bool isCollected {get; set;}
     void Collect();
 }
 /// <summary>New class Test</summary>
-public class TestObject : Base, IInteractive , IBreakable, ICollectable
+class TestObject : Base, IInteractive , IBreakable, ICollectable
 {
     public int durability {get; set;}
-    public bool isCollected {set; get;}
+    public bool isCollected {get; set;}
     public void Interact()
     {
 
