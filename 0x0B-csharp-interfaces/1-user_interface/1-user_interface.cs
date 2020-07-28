@@ -13,6 +13,7 @@ abstract class Base
     }
 }
 
+/// <summary>Interface Interactive</summary>
 interface IInteractive
 {
     void Interact()
@@ -20,6 +21,7 @@ interface IInteractive
 
     }
 }
+/// <summary>Interface Breakable</summary>
 interface IBreakable
 {
     int durability { get; set;}
@@ -28,7 +30,7 @@ interface IBreakable
 
     }
 }
-
+/// <summary>Interface Collectable</summary>
 interface ICollectable
 {
     bool isCollected {set; get;}
@@ -37,7 +39,7 @@ interface ICollectable
 
     }
 }
-
+/// <summary>New class Test</summary>
 class TestObject : IInteractive , IBreakable, ICollectable
 {
     public int durability {get; set;}
