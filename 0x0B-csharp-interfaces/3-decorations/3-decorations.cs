@@ -49,9 +49,9 @@ class Decoration : Base, IInteractive, IBreakable
     public bool isQuestItem;
 
     public int durability { get; set; }
-    public Decoration(string n = "Decoration", int d = 1, bool isQ = false)
+    public Decoration(string name = "Decoration", int durability = 1, bool isQuestItem = false)
     {
-        if (d < 0)
+        if (d <= 0)
             throw new Exception("Durability must be greater than 0");
         name = n;
         durability = d;
