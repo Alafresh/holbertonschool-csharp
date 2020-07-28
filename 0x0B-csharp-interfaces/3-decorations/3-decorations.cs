@@ -69,12 +69,12 @@ class Decoration : Base, IInteractive, IBreakable
 
     public void Break()
     {
+        durability--;
         if ( durability > 0)
             Console.WriteLine("You hit the " + name + ". It cracks.");
         else if (durability == 0)
             Console.WriteLine("You smash the " + name + ". What a mess.");
         else
             Console.WriteLine("The " + name + " is already broken.");
-        durability--;
     }
 }
