@@ -35,7 +35,7 @@ class Door : Base, IInteractive
 {
     public Door(string value)
     {
-        if (name == "")
+        if (value == "")
             name = "Door";
         else
             name = value;
