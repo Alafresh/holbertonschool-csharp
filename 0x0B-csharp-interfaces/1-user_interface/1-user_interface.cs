@@ -33,16 +33,21 @@ interface ICollectable
 /// <summary>New class Test</summary>
 class TestObject : Base, IInteractive , IBreakable, ICollectable
 {
+    /// <summary>New class Test</summary>
     public int durability {get; set;}
+    /// <summary>New class Test</summary>
     public bool isCollected {set; get;}
+    /// <summary>New class Test</summary>
     public void Interact()
     {
 
     }
+    /// <summary>New class Test</summary>
     public void Break()
     {
 
     }
+    /// <summary>New class Test</summary>
     public void Collect()
     {
 
