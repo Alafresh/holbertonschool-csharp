@@ -4,7 +4,7 @@
 abstract class Base
 {
     /// <summary>Property</summary>
-    public string name;
+    public string name = "";
 
     /// <summary>Return the type</summary>
     public override string ToString()
@@ -31,23 +31,18 @@ interface ICollectable
     void Collect();
 }
 /// <summary>New class Test</summary>
-class TestObject : Base, IInteractive , IBreakable, ICollectable
+public class TestObject : Base, IInteractive , IBreakable, ICollectable
 {
-    /// <summary>New class Test</summary>
     public int durability {get; set;}
-    /// <summary>New class Test</summary>
     public bool isCollected {set; get;}
-    /// <summary>New class Test</summary>
     public void Interact()
     {
 
     }
-    /// <summary>New class Test</summary>
     public void Break()
     {
 
     }
-    /// <summary>New class Test</summary>
     public void Collect()
     {
 
