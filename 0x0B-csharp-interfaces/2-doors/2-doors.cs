@@ -33,12 +33,9 @@ interface ICollectable
 /// <summary>New class Door</summary>
 class Door : Base, IInteractive
 {
-    public Door(string value)
+    public Door(string value = "Door")
     {
-        if (value == "")
-            name = "Door";
-        else
-            name = value;
+        name = value;
     }
     public void Interact()
     {
