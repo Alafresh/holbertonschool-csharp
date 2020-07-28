@@ -16,28 +16,19 @@ abstract class Base
 /// <summary>Interface Interactive</summary>
 interface IInteractive
 {
-    void Interact()
-    {
-
-    }
+    void Interact();
 }
 /// <summary>Interface Breakable</summary>
 interface IBreakable
 {
     int durability { get; set;}
-    void Break()
-    {
-
-    }
+    void Break();
 }
 /// <summary>Interface Collectable</summary>
 interface ICollectable
 {
     bool isCollected {set; get;}
-    void Collect()
-    {
-
-    }
+    void Collect();
 }
 /// <summary>New class Test</summary>
 class TestObject : IInteractive , IBreakable, ICollectable
