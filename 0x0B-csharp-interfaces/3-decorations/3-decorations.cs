@@ -63,7 +63,7 @@ class Decoration : Base, IInteractive, IBreakable
             Console.WriteLine("The " + name + " has been broken.");
         else if( isQuestItem == true)
             Console.WriteLine("You look at the " + name + ". There's a key inside.");
-        else if (isQuestItem == false)
+        else
             Console.WriteLine("You look at the " + name + ". Not much to see here.");
     }
 
