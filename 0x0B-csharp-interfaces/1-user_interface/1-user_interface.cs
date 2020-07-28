@@ -44,4 +44,16 @@ class TestObject : IInteractive , IBreakable, ICollectable
 {
     public int durability {get; set;}
     public bool isCollected {set; get;}
+    public void Interact()
+    {
+
+    }
+    public void Break()
+    {
+
+    }
+    public void Collect()
+    {
+
+    }
 }
