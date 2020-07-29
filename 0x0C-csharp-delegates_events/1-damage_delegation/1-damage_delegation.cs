@@ -29,7 +29,7 @@ public class Player
     {
         Console.WriteLine(this.name + " has " + this.hp + " / " + this.maxHp + " health");
     }
-    delegate float CalculateHealth();
+    delegate float CalculateHealth(float h);
 
     /// <summary>Damage status</summary>
     public void TakeDamage(float damage)
