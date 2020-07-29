@@ -1,5 +1,6 @@
 ﻿using System;
 
+delegate float CalculateHealth();
 
 /// <summary>Abstract thinking</summary>
 public class Player
@@ -29,25 +30,32 @@ public class Player
     {
         Console.WriteLine(this.name + " has " + this.hp + " / " + this.maxHp + " health");
     }
-    delegate float CalculateHealth(float h);
 
     /// <summary>Damage status</summary>
+    /// <param name="damage">The amount of damage taken.</param>
     public void TakeDamage(float damage)
     {
-        Console.WriteLine("{0} takes {1} damage!", this.name, damage);
         if (damage < 0)
+        {
+            Console.WriteLine(this.name + " takes 0 damage!");
             damage = 0f;
-      
+        }
+        else    
+            Console.WriteLine(this.name + " takes " + damage + " damage!");
         this.hp -= damage;
     }
 
     /// <summary>Heal status</summary>
+    /// <param name="heal">The amount of damage taken.</param>
     public void HealDamage(float heal)
     {
-        Console.WriteLine("{0} heals {1} HP!", this.name, heal);
         if (heal < 0)
+        {
+            Console.WriteLine(this.name + " heals 0 damage!");
             heal = 0f;
-       
+        }
+        else
+            Console.WriteLine(this.name + " heals " + heal + " HP!");
         this.hp += heal;
     }
 }
