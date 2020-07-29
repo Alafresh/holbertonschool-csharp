@@ -4,11 +4,11 @@
 public class Player
 {
     /// <summary>Constructor</summary>
-    private protected string name;
+    protected string name;
     /// <summary>Constructor</summary>
-    private protected float maxHp;
+    protected float maxHp;
     /// <summary>Constructor</summary>
-    private protected float hp;
+    protected float hp;
 
     /// <summary>Constructor</summary>
     public Player(string name = "Player", float maxHp = 100f)
