@@ -36,7 +36,7 @@ public class Player
     /// <summary>Damage status</summary>
     public void TakeDamage(float damage)
     {
-        if (damage < 0)
+        if (damage < 0f)
         {
             Console.WriteLine(this.name + " takes 0 damage!");
             damage = 0f;
@@ -51,7 +51,7 @@ public class Player
     /// <summary>Heal status</summary>
     public void HealDamage(float heal)
     {
-        if (heal < 0)
+        if (heal < 0f)
         {
             Console.WriteLine(this.name + " heals 0 damage!");
             heal = 0f;
