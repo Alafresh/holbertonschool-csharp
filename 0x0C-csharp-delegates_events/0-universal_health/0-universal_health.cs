@@ -20,6 +20,7 @@ public class Player
         }
         else
             this.maxHp = maxHp;
+        this.maxHp = maxHp;
         this.name = name;
         this.hp = this.maxHp;
     }
