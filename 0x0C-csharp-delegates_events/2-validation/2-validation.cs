@@ -51,7 +51,7 @@ public class Player
     {
         if (heal < 0)
         {
-            Console.WriteLine(this.name + " heals 0 damage!");
+            Console.WriteLine(this.name + " heals 0 HP!");
             heal = 0f;
         }
         else
