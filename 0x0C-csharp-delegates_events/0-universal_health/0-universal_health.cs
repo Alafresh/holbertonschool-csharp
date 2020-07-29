@@ -27,6 +27,6 @@ public class Player
     /// <summary>HP status</summary>
     public void PrintHealth()
     {
-        Console.WriteLine(this.name + " has " + this.hp + " / " + this.maxHp + " health.");
+        Console.WriteLine(this.name + " has " + this.hp + " / " + this.maxHp + " health");
     }
 }
