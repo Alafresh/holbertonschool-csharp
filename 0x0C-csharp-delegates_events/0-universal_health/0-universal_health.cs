@@ -18,6 +18,8 @@ public class Player
             this.maxHp = 0f;
             Console.WriteLine("maxHp must be greater than 0. maxHp set to 100f by default.");
         }
+        else
+            this.maxHp = maxHp;
         this.name = name;
         this.hp = this.maxHp;
     }
