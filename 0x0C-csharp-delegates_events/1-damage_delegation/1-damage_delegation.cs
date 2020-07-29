@@ -39,8 +39,11 @@ public class Player
             Console.WriteLine(this.name + " takes 0 damage!");
             damage = 0f;
         }
-        else    
+        else 
+        {  
             Console.WriteLine(this.name + " takes " + damage + " damage!");
+            this.hp -= damage;
+        }
     }
 
     /// <summary>Heal status</summary>
@@ -52,6 +55,9 @@ public class Player
             heal = 0f;
         }
         else
+        {
             Console.WriteLine(this.name + " heals " + heal + " HP!");
+            this.hp += heal;
+        }
     }
 }
