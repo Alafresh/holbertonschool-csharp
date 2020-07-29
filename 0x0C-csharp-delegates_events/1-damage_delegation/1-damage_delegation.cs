@@ -1,6 +1,6 @@
 ﻿using System;
 
-delegate float CalculateHealth();
+delegate float CalculateHealth(float h);
 
 /// <summary>Abstract thinking</summary>
 public class Player
