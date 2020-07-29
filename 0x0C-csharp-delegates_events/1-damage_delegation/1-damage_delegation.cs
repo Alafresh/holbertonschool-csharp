@@ -36,7 +36,7 @@ public class Player
         if (damage < 0)
         {
             Console.WriteLine(this.name + " takes 0 damage!");
-            damage = 0;
+            damage = 0f;
         }
         else    
             Console.WriteLine(this.name + " takes " + damage + " damage!");
@@ -49,7 +49,7 @@ public class Player
         if (heal < 0)
         {
             Console.WriteLine(this.name + " heals 0 damage!");
-            heal = 0;
+            heal = 0f;
         }
         else
             Console.WriteLine(this.name + " heals " + heal + " HP!");
