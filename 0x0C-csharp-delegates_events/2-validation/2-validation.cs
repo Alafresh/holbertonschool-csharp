@@ -40,9 +40,11 @@ public class Player
             Console.WriteLine(this.name + " takes 0 damage!");
             damage = 0f;
         }
-        else    
+        else
+        {
             Console.WriteLine(this.name + " takes " + damage + " damage!");
-        newHp = this.hp - damage;
+            newHp = this.hp - damage;
+        }
         ValidateHP(newHp);
     }
 
@@ -56,8 +58,10 @@ public class Player
             heal = 0f;
         }
         else
+        {
             Console.WriteLine(this.name + " heals " + heal + " HP!");
-        newHp = this.hp + heal;
+            newHp = this.hp + heal;
+        }
         ValidateHP(newHp);
     }
     /// <summary> sets the new value of the Player’s hp</summary>
