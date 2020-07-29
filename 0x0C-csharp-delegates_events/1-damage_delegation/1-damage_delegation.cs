@@ -32,7 +32,6 @@ public class Player
     }
 
     /// <summary>Damage status</summary>
-    /// <param name="damage">The amount of damage taken.</param>
     public void TakeDamage(float damage)
     {
         if (damage < 0)
@@ -42,11 +41,9 @@ public class Player
         }
         else    
             Console.WriteLine(this.name + " takes " + damage + " damage!");
-        this.hp -= damage;
     }
 
     /// <summary>Heal status</summary>
-    /// <param name="heal">The amount of damage taken.</param>
     public void HealDamage(float heal)
     {
         if (heal < 0)
@@ -56,6 +53,5 @@ public class Player
         }
         else
             Console.WriteLine(this.name + " heals " + heal + " HP!");
-        this.hp += heal;
     }
 }
