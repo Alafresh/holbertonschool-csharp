@@ -3,10 +3,12 @@
 /// <summary>Abstract thinking</summary>
 public class Player
 {
-    private string name;
-
-    private float maxHp;
-    private float hp;
+    /// <summary>Constructor</summary>
+    protected string name;
+    /// <summary>Constructor</summary>
+    protected float maxHp;
+    /// <summary>Constructor</summary>
+    protected float hp;
 
     /// <summary>Constructor</summary>
     public Player(string name = "Player", float maxHp = 100f)
