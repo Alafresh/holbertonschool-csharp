@@ -11,7 +11,6 @@ public class Player
     protected float maxHp;
     /// <summary>Constructor</summary>
     protected float hp;
-    float newHp;
 
     /// <summary>Constructor</summary>
     public Player(string name = "Player", float maxHp = 100f)
@@ -35,6 +34,7 @@ public class Player
     /// <summary>Damage status</summary>
     public void TakeDamage(float damage)
     {
+        float newHp;
         if (damage < 0)
         {
             Console.WriteLine(this.name + " takes 0 damage!");
@@ -49,6 +49,7 @@ public class Player
     /// <summary>Heal status</summary>
     public void HealDamage(float heal)
     {
+        float newHp;
         if (heal < 0)
         {
             Console.WriteLine(this.name + " heals 0 HP!");
