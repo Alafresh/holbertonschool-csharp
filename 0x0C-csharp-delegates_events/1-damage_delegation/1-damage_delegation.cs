@@ -1,6 +1,6 @@
 ﻿using System;
 
-delegate float CalculateHealth(float h);
+delegate float CalculateHealth();
 
 /// <summary>Abstract thinking</summary>
 public class Player
@@ -33,16 +33,16 @@ public class Player
     /// <summary>Damage status</summary>
     public void TakeDamage(float damage)
     {
-        if (damage < 0)
+        if (damage <= 0)
             Console.WriteLine(this.name + " takes 0 damage!");
-        else    
+        else
             Console.WriteLine(this.name + " takes " + damage + " damage!");
     }
 
     /// <summary>Heal status</summary>
     public void HealDamage(float heal)
     {
-        if (heal < 0)
+        if (heal <= 0)
             Console.WriteLine(this.name + " heals 0 damage!");
         else
             Console.WriteLine(this.name + " heals " + heal + " HP!");
