@@ -117,7 +117,7 @@ public class Player
 }
 class CurrentHPArgs : EventArgs
 {
-        public float currentHp;
+        public readonly float currentHp;
 
         public CurrentHPArgs(float newHp)
         {
